@@ -1,0 +1,37 @@
+state_name,stationNum,stationNum(Fourwheels),chargerNum,ReportNum(ICCT),SampleRate
+Andaman & Nicobar Islands,4,1,4,4,100.00%
+Andhra Pradesh,601,120,647,448,134.15%
+Arunachal Pradesh,41,0,41,41,100.00%
+Assam,276,46,283,261,105.75%
+Bihar,347,31,355,306,113.40%
+Chandigarh,13,8,22,13,100.00%
+Chhattisgarh,271,59,285,250,108.40%
+Delhi,1941,132,3617,1931,100.52%
+Goa,137,13,176,137,100.00%
+Gujarat,992,227,1266,959,103.44%
+Haryana,709,129,2354,674,105.19%
+Himachal Pradesh,106,22,116,103,102.91%
+Jammu & Kashmir,159,32,175,119,133.61%
+Jharkhand,256,34,297,241,106.22%
+Karnataka,5765,243,7504,5705,101.05%
+Kerala,1212,158,1828,1188,102.02%
+Ladakh,1,0,2,1,100.00%
+Lakshadweep,1,0,2,1,100.00%
+Madhya Pradesh,903,130,958,833,108.40%
+Maharashtra,3728,426,5584,3615,103.13%
+Manipur,46,1,46,46,100.00%
+Meghalaya,43,3,61,42,102.38%
+Mizoram,12,0,12,12,100.00%
+Nagaland,28,1,28,28,100.00%
+Odisha,488,50,529,442,110.41%
+Puducherry,41,13,44,39,105.13%
+Punjab,593,73,646,463,128.08%
+Rajasthan,1129,227,1250,1078,104.73%
+Sikkim,5,1,7,5,100.00%
+Tamil Nadu,1413,447,1617,1221,115.72%
+Telangana,956,192,1242,788,121.32%
+Tripura,50,1,51,50,100.00%
+UT OF D&NH AND D&D,6,4,6,6,100.00%
+Uttar Pradesh,1989,193,2250,1845,107.80%
+Uttarakhand,177,37,237,168,105.36%
+West Bengal,763,142,864,668,114.22%

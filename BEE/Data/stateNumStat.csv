@@ -1,0 +1,37 @@
+,state_name,stationNum(Fourwheels),stationNum,chargerNum
+0,Andaman & Nicobar Islands,1.0,4,4
+1,Andhra Pradesh,120.0,601,647
+2,Assam,46.0,276,283
+3,Bihar,31.0,347,355
+4,Chandigarh,8.0,13,22
+5,Chhattisgarh,59.0,271,285
+6,Delhi,132.0,1941,3617
+7,Goa,13.0,137,176
+8,Gujarat,227.0,992,1266
+9,Haryana,129.0,709,2354
+10,Himachal Pradesh,22.0,106,116
+11,Jammu & Kashmir,32.0,159,175
+12,Jharkhand,34.0,256,297
+13,Karnataka,243.0,5765,7504
+14,Kerala,158.0,1212,1828
+15,Madhya Pradesh,130.0,903,958
+16,Maharashtra,426.0,3728,5584
+17,Manipur,1.0,46,46
+18,Meghalaya,3.0,43,61
+19,Nagaland,1.0,28,28
+20,Odisha,50.0,488,529
+21,Puducherry,13.0,41,44
+22,Punjab,73.0,593,646
+23,Rajasthan,227.0,1129,1250
+24,Sikkim,1.0,5,7
+25,Tamil Nadu,447.0,1413,1617
+26,Telangana,192.0,956,1242
+27,Tripura,1.0,50,51
+28,UT OF D&NH AND D&D,4.0,6,6
+29,Uttar Pradesh,193.0,1989,2250
+30,Uttarakhand,37.0,177,237
+31,West Bengal,142.0,763,864
+32,Arunachal Pradesh,0.0,41,41
+33,Ladakh,0.0,1,2
+34,Lakshadweep,0.0,1,2
+35,Mizoram,0.0,12,12

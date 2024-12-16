@@ -1,0 +1,335 @@
+/** 
+Source Website: https://evyatra.beeindia.gov.in/public-charging-stations/
+GET Request: https://evyatra.beeindia.gov.in/bee-ev-backend/getstatelist
+**/
+{
+    "type": "SUCCESS",
+    "message": "DATA LOADED SUCCESSFULLY",
+    "result": "SUCCESS",
+    "value": [
+        {
+            "id": 1,
+            "state_code": "AN",
+            "state_name": "Andaman & Nicobar Islands",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Directorate of Transport"
+        },
+        {
+            "id": 2,
+            "state_code": "AP",
+            "state_name": "Andhra Pradesh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "New and Renewable Energy Development Corporation of Andhra Pradesh (NREDCAP)"
+        },
+        {
+            "id": 3,
+            "state_code": "AR",
+            "state_name": "Arunachal Pradesh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Central Electrical Zone, Power Department"
+        },
+        {
+            "id": 4,
+            "state_code": "AS",
+            "state_name": "Assam",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Not Mentioned in Policy"
+        },
+        {
+            "id": 5,
+            "state_code": "BR",
+            "state_name": "Bihar",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Transport Department"
+        },
+        {
+            "id": 6,
+            "state_code": "CH",
+            "state_name": "Chandigarh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Electricity Department"
+        },
+        {
+            "id": 7,
+            "state_code": "CT",
+            "state_name": "Chhattisgarh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Transport Department, Chhattisgarh"
+        },
+        {
+            "id": 10,
+            "state_code": "DL",
+            "state_name": "Delhi",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Delhi Transco Limited (DTL)"
+        },
+        {
+            "id": 11,
+            "state_code": "GA",
+            "state_name": "Goa",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Department of New and Renewable Energy"
+        },
+        {
+            "id": 12,
+            "state_code": "GJ",
+            "state_name": "Gujarat",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Energy & Petrochemicals Department"
+        },
+        {
+            "id": 13,
+            "state_code": "HR",
+            "state_name": "Haryana",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Haryana Renewable Energy Development Agency (HAREDA)"
+        },
+        {
+            "id": 14,
+            "state_code": "HP",
+            "state_name": "Himachal Pradesh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Himachal Pradesh State Electricity Board Limited (HPSEBL)"
+        },
+        {
+            "id": 15,
+            "state_code": "JK",
+            "state_name": "Jammu & Kashmir",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 16,
+            "state_code": "JH",
+            "state_name": "Jharkhand",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 17,
+            "state_code": "KA",
+            "state_name": "Karnataka",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Bengaluru Electricity Supply Company Limited (BESCOM)"
+        },
+        {
+            "id": 18,
+            "state_code": "KL",
+            "state_name": "Kerala",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Kerala State Electricity Board Ltd. (KSEBL)"
+        },
+        {
+            "id": 19,
+            "state_code": "LD",
+            "state_name": "Lakshadweep",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Lakshadweep Energy Development Agency (LEDA)"
+        },
+        {
+            "id": 20,
+            "state_code": "MP",
+            "state_name": "Madhya Pradesh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "M.P Power Management Co. Ltd."
+        },
+        {
+            "id": 21,
+            "state_code": "MH",
+            "state_name": "Maharashtra",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Maharashtra State Electricity Distribution Company Ltd. (MSEDCL)"
+        },
+        {
+            "id": 22,
+            "state_code": "MN",
+            "state_name": "Manipur",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 23,
+            "state_code": "ML",
+            "state_name": "Meghalaya",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Meghalaya Power Distribution Corporation Ltd. (MePDCL)"
+        },
+        {
+            "id": 24,
+            "state_code": "MZ",
+            "state_name": "Mizoram",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 25,
+            "state_code": "NL",
+            "state_name": "Nagaland",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 26,
+            "state_code": "OR",
+            "state_name": "Odisha",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "E.I.C., Electricity"
+        },
+        {
+            "id": 27,
+            "state_code": "PY",
+            "state_name": "Puducherry",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 28,
+            "state_code": "PB",
+            "state_name": "Punjab",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Punjab State Power Corporation Ltd. (PSPCL)"
+        },
+        {
+            "id": 29,
+            "state_code": "RJ",
+            "state_name": "Rajasthan",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Jaipur Vidyut Vitran Nigam Limited"
+        },
+        {
+            "id": 30,
+            "state_code": "SK",
+            "state_name": "Sikkim",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "SDA Mizoram (P&E Department, Mizoram)"
+        },
+        {
+            "id": 31,
+            "state_code": "TN",
+            "state_name": "Tamil Nadu",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Tamil Nadu Generation and Distribution Corporation Ltd. (TANGEDCO)"
+        },
+        {
+            "id": 32,
+            "state_code": "TR",
+            "state_name": "Tripura",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 33,
+            "state_code": "TG",
+            "state_name": "Telangana",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Telangana State Renewable Energy Development Corporation Ltd., (TSREDCO)"
+        },
+        {
+            "id": 34,
+            "state_code": "UP",
+            "state_name": "Uttar Pradesh",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Invest UP"
+        },
+        {
+            "id": 35,
+            "state_code": "UK",
+            "state_name": "Uttarakhand",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "Uttarakhand Power Corporation Limited (UPCL)"
+        },
+        {
+            "id": 36,
+            "state_code": "WB",
+            "state_name": "West Bengal",
+            "entry_by": -1,
+            "timestamp": "2022-05-16 10:21:39+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "West Bengal State Electricity Distribution Company Limited (WBSEDCL)"
+        },
+        {
+            "id": 37,
+            "state_code": "LAD",
+            "state_name": "Ladakh",
+            "entry_by": -1,
+            "timestamp": "2022-07-08 15:41:21.366837+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        },
+        {
+            "id": 38,
+            "state_code": "D&NH AND D&D",
+            "state_name": "UT OF D&NH AND D&D",
+            "entry_by": -1,
+            "timestamp": "2022-10-12 13:26:02.881109+05:30",
+            "tstatus": "t",
+            "nodalCompanyName": "-"
+        }
+    ]
+}
