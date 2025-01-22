@@ -43,22 +43,70 @@ class charger(crawler):
         self.maxResult = maxResult
     
     def getCountry(self, country: str, path: str = ""):
+        print(country)
         url = "https://api.openchargemap.io/v3/poi?key={}&countrycode={}&compact=true&maxresults={}".format(self.__key, country, self.maxResult)
         super().__init__(url)
         result = self.rget().json()
-        path =os.path.join(path, country + "Charger.json")
-        with open(path, 'w') as f:
+        with open(os.path.join(path, country + "Charger.json"), 'w') as f:
             json.dump(result, f, indent=4)
+
+        #Save csv
+        self.head = ["StatusType", "IsRecentlyVerified", "UUID", "ParentChargePointID", "UsageTypeID", "UsageType", "UsageCost"]
+        self.address = ["Title", "AddressLine1", "AddressLine2", "Town", "StateOrProvince", "Postcode", "Latitude", "Longitude"]
+        self.connections = ["ID", "ConnectionTypeID", "ConnectionType", "Reference", "StatusTypeID", "StatusType",
+                       "LevelID", "Level", "Amps", "Voltage", "PowerKW", "CurrentTypeID", "CurrentType", "Quantity"]
+        self.other = ["NumberOfPoints", "DatePlanned", "DateLastConfirmed", "StatusTypeID", "DateLastStatusUpdate",
+                 "DataQualityLevel", "DateCreated"]
+        all = self.head + self.address + self.connections + self.other
+        csv = pd.DataFrame(columns=all)
+        num = 0
+        count = 1
+        length = len(result)
+        for i in range(length):
+            # Print stature every 100 times
+            if not count % 100:
+                print("{}/{}".format(count, length))
+            count += 1
+            contents = dict.fromkeys(all)
+            chargerPlace = result[i]
+            for content in self.head + self.other:
+                contents[content] = chargerPlace[content]
+            for add in self.address:
+                contents[add] = chargerPlace["AddressInfo"][add]
+            chargerPoints = chargerPlace["Connections"]
+            for j in range(len(chargerPoints)):
+                for connection in self.connections:
+                    contents[connection] = chargerPoints[j][connection]
+                    csv.loc[num] = contents
+                num += 1
+        csv.to_csv(os.path.join(path, country + "Charger.csv"), encoding="utf-8")                
         
         return 0
+    
+    def getDetial(self, all, result, i):
+        contents = dict.fromkeys(all)
+        chargerPlace = result[i]
+        for content in self.head + self.other:
+            contents[content] = chargerPlace[content]
+        for add in self.address:
+            contents[add] = chargerPlace["AddressInfo"][add]
+        chargerPoints = chargerPlace["Connections"]
+        for j in range(len(chargerPoints)):
+            for connection in self.connections:
+                contents[connection] = chargerPoints[j][connection]
+                csv.loc[num] = contents
+            num += 1
 
 if __name__ == "__main__":
+    countries = pd.read_csv("Data\\CountryList.csv", dtype=str)
+    countries = countries["ISO"].to_list()
+    countries = countries[113:] #RE开始,跳过95US
     #Get all charger information
-    a = charger(10000)
-    countries = ["IN"]
+    a = charger(100000)
+    # countries = ["NA"]
     for country in countries:
         a.getCountry(country, "Data")
 
-    # Get all countries charger number
-    b = allCountry()
-    b.getAll("Data")
+    # # Get all countries charger number
+    # b = allCountry()
+    # b.getAll("Data")
