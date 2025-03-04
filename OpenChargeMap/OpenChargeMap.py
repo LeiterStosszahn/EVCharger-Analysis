@@ -105,7 +105,7 @@ if __name__ == "__main__":
     a = charger(100000)
     # countries = ["NA"]
     for country in countries:
-        a.getCountry(country, "Data")
+        a.getCountry(country, "Data2025")
 
     # # Get all countries charger number
     # b = allCountry()
