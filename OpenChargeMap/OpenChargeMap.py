@@ -83,30 +83,30 @@ class charger(crawler):
         
         return 0
     
-    def getDetial(self, all, result, i):
-        contents = dict.fromkeys(all)
-        chargerPlace = result[i]
-        for content in self.head + self.other:
-            contents[content] = chargerPlace[content]
-        for add in self.address:
-            contents[add] = chargerPlace["AddressInfo"][add]
-        chargerPoints = chargerPlace["Connections"]
-        for j in range(len(chargerPoints)):
-            for connection in self.connections:
-                contents[connection] = chargerPoints[j][connection]
-                csv.loc[num] = contents
-            num += 1
+    # def getDetial(self, all, result, i):
+    #     contents = dict.fromkeys(all)
+    #     chargerPlace = result[i]
+    #     for content in self.head + self.other:
+    #         contents[content] = chargerPlace[content]
+    #     for add in self.address:
+    #         contents[add] = chargerPlace["AddressInfo"][add]
+    #     chargerPoints = chargerPlace["Connections"]
+    #     for j in range(len(chargerPoints)):
+    #         for connection in self.connections:
+    #             contents[connection] = chargerPoints[j][connection]
+    #             csv.loc[num] = contents
+    #         num += 1
 
 if __name__ == "__main__":
-    countries = pd.read_csv("Data\\CountryList.csv", dtype=str)
-    countries = countries["ISO"].to_list()
-    countries = countries[113:] #RE开始,跳过95US
-    #Get all charger information
-    a = charger(100000)
-    # countries = ["NA"]
-    for country in countries:
-        a.getCountry(country, "Data2025")
-
     # # Get all countries charger number
     # b = allCountry()
-    # b.getAll("Data")
+    # b.getAll("Data2025")
+
+    countries = pd.read_csv("Data2025\\CountryList.csv", dtype=str)
+    countries = countries["ISO"].to_list()
+    countries = countries[113:] #DE开始,跳过95US
+    #Get all charger information
+    a = charger(1000000)
+    countries = ["NA"]
+    for country in countries:
+        a.getCountry(country, "Data2025")

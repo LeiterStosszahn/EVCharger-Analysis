@@ -2,3 +2,5 @@ apiKey.py
 *.json
 *.csv
 OpenChargeMap/Data2024.zip
+*.pptx
+Data2025
