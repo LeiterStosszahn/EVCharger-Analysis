@@ -4,3 +4,12 @@ apiKey.py
 OpenChargeMap/Data2024.zip
 *.pptx
 Data2025
+*.gdb
+.backups
+GpMessages
+ImportLog
+*.aprx
+*.code-workspace
+__pycache__
+.pyHistory
+*.xlsx
