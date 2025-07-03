@@ -13,3 +13,4 @@ ImportLog
 __pycache__
 .pyHistory
 *.xlsx
+ArcGISProcess/WFS on data.apps.fao.org.wfs

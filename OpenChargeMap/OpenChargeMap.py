@@ -60,43 +60,7 @@ class charger(crawler):
 
         #Save csv
         self.JtC.path = path
-        self.JtC.run(result, country)
-        # self.head = ["StatusType", "IsRecentlyVerified", "UUID", "ParentChargePointID", "UsageTypeID", "UsageType", "UsageCost"]
-        # self.address = ["Title", "AddressLine1", "AddressLine2", "Town", "StateOrProvince", "Postcode", "Latitude", "Longitude"]
-        # self.connections = ["ID", "ConnectionTypeID", "ConnectionType", "Reference", "StatusTypeID", "StatusType",
-        #                "LevelID", "Level", "Amps", "Voltage", "PowerKW", "CurrentTypeID", "CurrentType", "Quantity"]
-        # self.other = ["NumberOfPoints", "DatePlanned", "DateLastConfirmed", "StatusTypeID", "DateLastStatusUpdate",
-        #          "DataQualityLevel", "DateCreated"]
-        # all = self.head + self.address + self.connections + self.other
-        # csv = pd.DataFrame(columns=all)
-        # num = 0
-        # count = 1
-        # length = len(result)
-        # for i in range(length):
-        #     # Print stature every 100 times
-        #     if not count % 100:
-        #         print("{}/{}".format(count, length))
-        #     count += 1
-        #     contents = dict.fromkeys(all)
-        #     chargerPlace = result[i]
-        #     for content in self.head + self.other:
-        #         contents[content] = chargerPlace[content]
-        #     for add in self.address:
-        #         contents[add] = chargerPlace["AddressInfo"][add]
-        #     chargerPoints = chargerPlace["Connections"]
-        #     if len(chargerPoints) == 0:
-        #         for connection in self.connections:
-        #             contents[connection] = None
-        #             csv.loc[num] = contents
-        #         num += 1
-        #     else:
-        #         # If there are multiple connections, save each connection
-        #         for j in range(len(chargerPoints)):
-        #             for connection in self.connections:
-        #                 contents[connection] = chargerPoints[j][connection]
-        #                 csv.loc[num] = contents
-        #             num += 1
-        # csv.to_csv(os.path.join(path, country + "Charger.csv"), encoding="utf-8")                
+        self.JtC.run(result, country)               
         
         return
 
