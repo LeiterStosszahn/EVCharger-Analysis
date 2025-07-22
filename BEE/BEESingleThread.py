@@ -1,5 +1,7 @@
-import json, os
+import json, os, sys
 import pandas as pd
+
+sys.path.append(".") # Set path to the roots
 
 from _toolClass.crawler import crawler
 
@@ -34,7 +36,7 @@ class BEE(crawler):
         
         self.stateList = result[["state_name"]].copy()
         
-        return 0
+        return
 
     def getAllStation(self, path: str = "") -> None:
         super().__init__(self.__allStationUrl)
@@ -75,16 +77,22 @@ class BEE(crawler):
         data = data.json()
         value = data["value"]
         for i in self.__keys:
-            self.finalResult.loc[stationID, i] = value[i]
+            if self.finalResult is not None:
+                self.finalResult.loc[stationID, i] = value[i]
+            else:
+                raise RuntimeError("Failed to initialize final result.")
         
         # Add information of charger
         num = 1
         for i in value["charger"]:
             for j in self.__chagerKeys:
-                self.finalResult.loc[stationID, j + "_Chger" + str(num)] = i[j]
+                if self.finalResult is not None:
+                    self.finalResult.loc[stationID, j + "_Chger" + str(num)] = i[j]
+                else:
+                    raise RuntimeError("Failed to initialize final result.")
             num += 1
 
-        return 0
+        return
 
 if __name__ == "__main__":
     a=BEE()

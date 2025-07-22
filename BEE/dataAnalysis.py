@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import numpy as np
 
 class analysis:
     def __init__(self):
@@ -22,7 +21,7 @@ class analysis:
         result = pd.merge(fourWheel, result, on="state_name", how="outer").fillna(0)
         result.to_csv(os.path.join(path, "stateNumStat.csv"), encoding="utf-8")
 
-        return 0
+        return
 
 if __name__ == "__main__":
     a = analysis()

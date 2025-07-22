@@ -1,16 +1,18 @@
 # API: https://openchargemap.org/site/develop/api#/operations/get-poi
 
-import json, os
+import json, os, sys
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 from bs4 import Tag
+
+sys.path.append(".") # Set path to the roots
 
 from _toolClass.crawler import crawler
 from _toolClass.apiKey import Key
 
 #Get list of all countries
 class allCountry(crawler):
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
     def getAll(self, path: str = "") -> None:
@@ -133,9 +135,9 @@ if __name__ == "__main__":
     # a = charger(1000000)
     # countries = ["NA"]
     # for country in countries:
-    #     a.getCountry(country, "Data2025")
+    #     a.getCountry(country, "OpenChargeMap\\Data2025")
 
-    # c = jsonToCsv("Data2025")
+    # c = jsonToCsv("OpenChargeMap\\Data2025")
     # for i in countries:
     #     print(i)
     #     c.convert(i)
