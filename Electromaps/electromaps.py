@@ -85,7 +85,7 @@ class electromaps(crawler):
             for i in self.Detial:
                 result[i].append(j.get(i, None))
             for i in self.DetialAddress:
-                result[i].append(j.get("address", None).get(i, None))
+                result[i].append(j.get("address", {}).get(i, None))
 
             return
 
