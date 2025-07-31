@@ -1,4 +1,4 @@
-import sys, os, json, threading, time, random, gc
+import sys, os, json, threading, time, random
 import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
