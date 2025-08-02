@@ -16,11 +16,26 @@ class driveSouthAfrica(crawler):
         pass
     
     def getData(self, j: list[dict], savePath: str) -> None:
-        result = {x: [] for x in self.Json + ["lat", "lng"]}
+        result = {x: [] for x in self.Json + ["lat", "lng", "numberOfChargers"]}
         for data in j:
             for i in self.Json:
                 result[i].append(data.get(i, None))
             position = data.get("position", {})
+            a = data.get("type2TotalBays", "").split(' ')[0]
+            b = data.get("typeCCSTotalBays", "").split(' ')[0]
+            if len(a) == 0:
+                a = 0
+            else:
+                a = int(a)
+            if len(b) == 0:
+                b = 0
+            else:
+                b = int(b)
+            if a == 0 and b == 0:
+                a = None
+            else:
+                a += b
+            result["numberOfChargers"].append(a)
             if position == {}:
                 result["lat"].append(None)
                 result["lng"].append(None)

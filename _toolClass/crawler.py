@@ -1,4 +1,5 @@
 import requests, time, random
+from tqdm import tqdm
 
 from .apiKey import Headers
 
@@ -20,7 +21,7 @@ class crawler:
                 else:
                     return r
             except:
-                print("Network Error")
+                tqdm.write("Network error, retry...")
                 time.sleep(random.randint(5,10))
                 continue
     
@@ -34,7 +35,7 @@ class crawler:
                 else:
                     return r
             except:
-                print("Network Error")
+                tqdm.write("Network error, retry...")
                 time.sleep(random.randint(5,10))
                 continue
 
@@ -42,7 +43,7 @@ class crawler:
     def __staureCode(r: requests.Response, rtype: str) -> bool:
         code = r.status_code
         if code != 200:
-            print("Error, stature code in {} is {}.".format(rtype, code))
+            tqdm.write("Error, stature code in {} is {}.".format(rtype, code))
             time.sleep(random.randint(5,10))
             return True
         else:

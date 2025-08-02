@@ -16,7 +16,7 @@ class tvpi(crawler):
         pass
     
     def getData(self, j: list[dict], savePath: str) -> None:
-        result = {x: [] for x in self.Json + ["connectedPlugs"]}
+        result = {x: [] for x in self.Json + ["connectedPlugs", "connectorNum"]}
         plug = {x: [] for x in self.connectedPlugs}
         for data in j:
             for i in self.Json:
@@ -24,12 +24,14 @@ class tvpi(crawler):
             plugs = data.get("connectedPlugs", [])
             if plugs == []:
                 result["connectedPlugs"].append(None)
+                result["connectorNum"].append(None)
             else:
                 plugResult = copy.deepcopy(plug)
                 for p in plugs:
                     for i in self.connectedPlugs:
                         plugResult[i].append(p.get(i, None))
                 result["connectedPlugs"].append(plugResult)
+                result["connectorNum"].append(len(plugResult["name"]))
 
         result = pd.DataFrame(result)
         result.to_csv(os.path.join(savePath, "tvpi.csv"), encoding="utf-8")
